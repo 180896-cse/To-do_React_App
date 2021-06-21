@@ -26,7 +26,8 @@ function App() {
         <h1>Hello User</h1>
         <form>
         <input value={input} onChange={event =>setInput(event.target.value)}/>
-        <Button type="submit" onClick={addtodo} variant="contained" color="primary">
+        
+        <Button disabled={!input} type="submit" onClick={addtodo} variant="contained" color="primary"> 
           Add to do
         </Button>
         {/* <button type='submit' onClick={addtodo}>Add ToDo</button> */}
